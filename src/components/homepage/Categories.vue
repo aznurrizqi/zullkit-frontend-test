@@ -7,7 +7,7 @@ const categories = ref([])
 
 async function getCategoriesData() {
     try {
-        const response = await axios.get('http://localhost:8000/api/categories?show_product=1&limit=4')
+        const response = await axios.get('http://localhost:8000/api/categories?limit=4')
         categories.value = response.data.data.data
     } catch (error) {
         console.log(error)

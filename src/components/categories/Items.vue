@@ -5,7 +5,7 @@ import ItemCard from '../ItemCard.vue';
 import { useRoute } from 'vue-router';
 
 const items = ref([])
-const category = ref([])
+const category = ref({})
 const route = useRoute()
 
 async function getItemsData() {
